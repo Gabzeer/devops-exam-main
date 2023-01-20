@@ -18,3 +18,10 @@ describe("validations tests suites - isEmpty", () => {
 });
 
 // TODO: Create tests suite for validation function
+
+describe("validateGamerTag", () => {
+    it('should return true for a valid gamer tag', () => {
+      const validGamerTag = 'Pl4y3r#1';
+      expect(validateGamerTag(validGamerTag)).toBe(true);
+    });
+});
